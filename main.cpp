@@ -6,7 +6,7 @@
 void printhelp();
 
 int main(int argc,char* argv[]){
-    WordStore list("D:\\tools\\storedlist.txt");
+    WordStore list("storedlist.txt");
     list.load();
     if(argc > 1){
         std::string command = argv[1];
