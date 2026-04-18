@@ -1,0 +1,25 @@
+---WORD---
+word=suburb
+meaning=
+example=
+note=
+---WORD---
+word=vivid
+meaning=bright; vividly colored, striking, or memorable; giving rise to strong mental images or feelings
+example=The vivid colors of the sunset painted the sky in shades of orange and pink.
+note=
+---WORD---
+word=concise
+meaning=Short and clear, or containing few words
+example=Give me a concise answer.
+note=
+---WORD---
+word=brisk
+meaning=Having an activity or pace that is energetic and lively; fresh and vigorous.
+example=She had a brisk walk in the park before getting started on her morning work.
+note=
+---WORD---
+word=furious
+meaning=Extremely angry, angry, or passionate.
+example=He was furious when he found out the project had been stolen.
+note=

@@ -1,0 +1,7 @@
+{
+  "model": "qwen3.5:4b",
+  "prompt": "For the English word gambol, return JSON only with keys meaning and example.",
+  "format": "json",
+  "think": false,
+  "stream": false
+}
