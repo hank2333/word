@@ -16,6 +16,7 @@ class WordStore {
     bool addWord(const std::string& w);
     bool addWord(const WordEntry& entry);
     void listWords() const;
+    bool delWord(const std::string& w);
     bool clear();
     WordEntry* findword(const std::string& w);
     const WordEntry* findword(const std::string& w) const;

@@ -18,6 +18,15 @@ bool WordStore::addWord(const WordEntry& entry){
     words.push_back(entry);
     return true;
 }
+bool WordStore::delWord(const std::string& w){
+    for(auto it = words.begin();it < words.end();it++){
+        if(it->word == w){
+            words.erase(it);
+            return true;
+        }
+    }
+    return false;
+}
 void WordStore::listWords() const{
     if(words.empty()){
         std::cout<<"Word list empty!"<<std::endl;

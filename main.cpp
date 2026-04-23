@@ -6,7 +6,7 @@
 void printhelp();
 
 int main(int argc,char* argv[]){
-    WordStore list("storedlist.txt");
+    WordStore list("D:\\tools\\storedlist.txt");
     list.load();
     if(argc > 1){
         std::string command = argv[1];
@@ -65,6 +65,27 @@ int main(int argc,char* argv[]){
                 }
             }
         }
+        else if(command == "del"){
+            if(argc < 3){
+                std::cout<<"Not enough argument!"<<std::endl;
+                printhelp();
+                return 1;
+            }
+            else{
+                if(list.delWord(argv[2])){
+                    std::cout<<"Word deleted!"<<std::endl;
+                    if(!list.save()){
+                        std::cout<<"Save failed!"<<std::endl;
+                        return 1;
+                    }
+                    return 0;
+                }
+                else{
+                    std::cout<<"Word not found!"<<std::endl;
+                    return 1;
+                }
+            }
+        }
         else{
             std::cout<<"error!"<<std::endl;
         }
@@ -82,4 +103,5 @@ void printhelp(){
     std::cout<<"word add <word>\t\tAdd single word"<<std::endl;
     std::cout<<"word list\t\tlist down all the words"<<std::endl;
     std::cout<<"word show <word>\t\tshow exact word info"<<std::endl;
+    std::cout<<"word del  <word>\t\tdelete exact word"<<std::endl;
 }

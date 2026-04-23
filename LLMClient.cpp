@@ -94,8 +94,8 @@ LLMResult LLMClient::enrichWord(const std::string& word) const {
         "For the English word " + word +
         ", return JSON only with keys meaning and example.";
 
-    std::string requestFile = "ollama_request.json";
-    std::string responseFile = "ollama_response.json";
+    std::string requestFile = "D:\\tools\\ollama_request.json";
+    std::string responseFile = "D:\\tools\\ollama_response.json";
 
     std::ofstream req(requestFile);
     if (!req) {
