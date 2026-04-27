@@ -8,5 +8,6 @@
 - word add \<word\>         
 - word list               
 - word show \<word\>      
-- word clear              
+- word clear
+- word del \<word\>              
 ### 哈哈哈哈哈哈哈现在甚至需要你自己加这个编译之后的exe进环境变量
